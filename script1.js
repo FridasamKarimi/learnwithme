@@ -59,7 +59,7 @@ const popped = friends.pop();
 console.log(popped);
 
 console.log(friends);
-*/
+
 
 
 //OBJECTS
@@ -90,5 +90,20 @@ if(fridasam[interestedIn]) {
 fridasam.location = 'Portugal';
 fridasam['twitter'] = '@Fridasam';
 console.log(fridasam);
+*/
 
+//OBJECT METHODS
+const fridasam = {
+    firstName: 'Karimi',
+    lastName: 'Muriithi',
+    birthYear: 2002,
+    job: 'Doctor',
+    friends:['Naomi', 'Blessis', 'Austin'],
+    hasDriversLicense: true,
 
+    calcAge: function (birthYear) {
+        return 2037 - birthYear;
+    }
+};
+
+console.log(fridasam.calcAge(2003));
