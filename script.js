@@ -4,3 +4,17 @@ function logger() {
 //invoking functions
 logger();
 logger();
+
+function fruitProcessor(apples,oranges) {
+    console.log(apples, oranges);
+
+    const juice = `Juice with ${apples} apples and ${oranges} oranges,`;
+    return juice;
+}
+
+const appleJuice = fruitProcessor(5, 4);
+console.log(appleJuice);
+
+//reuse function
+const appleOrangeJuice = fruitProcessor(3,4);
+console.log(appleOrangeJuice);
