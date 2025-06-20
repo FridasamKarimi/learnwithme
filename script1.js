@@ -39,7 +39,7 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(yias[0]), calcAge(yias[1]), calcAge(yias[yias.length-1])];
 console.log(ages);
-*/
+
 
 //ARRAYS METHODS
 
@@ -59,3 +59,36 @@ const popped = friends.pop();
 console.log(popped);
 
 console.log(friends);
+*/
+
+
+//OBJECTS
+const fridasam = {
+    firstName: 'Karimi',
+    lastName: 'Muriithi',
+    age: 2037 -2002,
+    job: 'Doctor',
+    friends:['Naomi', 'Blessis', 'Austin']
+};
+console.log(fridasam);
+console.log(fridasam.firstName);
+console.log(fridasam['firstName']);
+
+const nameKey = 'Name';
+console.log(fridasam['first' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Fridasam');
+
+
+if(fridasam[interestedIn]) {
+    console.log(fridasam[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between Fname,LName, job or friends');
+
+}
+
+fridasam.location = 'Portugal';
+fridasam['twitter'] = '@Fridasam';
+console.log(fridasam);
+
+
